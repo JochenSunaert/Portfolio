@@ -69,7 +69,7 @@
         </nav>
         <!--uitleg jezelf-->
         <article class="leftarticle">
-            <img src="images/Headerimage.png">
+            <img src="images/Headerimage.jpg">
             <div>
                 <h1>Hello<br> I’m&nbsp;Jochen<br> Sunaert</h1>
                 <p>Een laatstejaarsstudent in Erasmus hogeschool Brussel. Profesioneel webdesigner en webdeveloper met ervaring in: Javascript, Php, Laravel, React, Vue, Jquery, Node, en adobe programma's</p>
@@ -140,36 +140,49 @@
         <article class="portfolio">
             <div class="portfoliodiv">
                 <div class="portfolio-item">
-                    <img src="images/PortfolioImages/Quizmaster/Quizmaster.png" alt="Quizmaster">
-                    <video src="images/PortfolioImages/Quizmaster/quizmaster.mp4" muted loop autoplay></video>
+                    <video src="images/PortfolioImages/Quizmaster/quizmaster.mp4" muted loop></video>
                     <span class="hover-text">Web - Quizmaster - Live quiz</span>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/portfolio7.png" alt="Portfolio 7">
+                    <video src="images/PortfolioImages/Portaal.mp4" muted loop></video>
+                    <span class="hover-text">Web - Portaal - Fairy tale portal</span>
                 </div>
                 <div class="portfoliotext">
                     <h3><strong>Web</strong></h3>
+
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/House_Jochen_sunaert.jpg" alt="House">
+                    <video src="images/PortfolioImages/Sprookje.mp4" muted loop></video>
+                    <span class="hover-text">Web - Repelsteeltje - Fairy tales</span>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/bubblipop affishe.png" alt="Bubblipop">
+                    <video src="images/PortfolioImages/Animaties.mp4" muted loop></video>
+                    <span class="hover-text">Web - One Piece - Animations playground</span>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/porfolio2.png" alt="Portfolio 2">
+                    <video src="images/PortfolioImages/Scraper.mp4" muted loop></video>
+                    <span class="hover-text">Web - Torfs Scraper - Data Scraper</span>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/porfolio5.png" alt="Portfolio 5">
+                <div class="portfoliotext">
+                    <h3><strong>Designs</strong></h3>
+
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/portfolio3.png" alt="Portfolio 3">
+                <div class="portfolio-item topitem">
+                    <video src="images/PortfolioImages/aquabeats.mp4" muted loop></video>
+                    <span class="hover-text">Design - AquaBeats - Festival Design</span>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/Spaceshuttle2.png" alt="Spaceshuttle">
+                <div class="portfolio-item topitem">
+                    <video src="images/PortfolioImages/Trackmania.mp4" muted loop></video>
+                    <span class="hover-text">Design - AquaBeats - Festival Design</span>
                 </div>
+                <div class="portfolio-item topitem">
+                    <video src="images/PortfolioImages/Bloom.mp4" muted loop></video>
+                    <span class="hover-text">Design - AquaBeats - Festival Design</span>
+                </div>
+
             </div>
         </article>
+        
         <!--Education section-->
         <section class="education">
             <div>
@@ -256,6 +269,25 @@
     </main>
     <!--script geschreven door mezelf-->
 <script src="scripts/hamburger.js"></script>
+<script>
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+    const video = item.querySelector('video');
+
+    item.addEventListener('mouseenter', () => {
+        if (video) {
+            video.currentTime = 0; // Start from the first frame
+            video.play();          // Play the video
+        }
+    });
+
+    item.addEventListener('mouseleave', () => {
+        if (video) {
+            video.pause();         // Pause the video
+        }
+    });
+});
+
+</script>
 </body>
 
 </html>

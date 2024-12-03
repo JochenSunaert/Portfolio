@@ -202,3 +202,5 @@ $(".link9").click(function() {
     $(" .hamburger2 > div> div:nth-child(3)").css('transform', 'rotate(0deg)');
     menuGesloten2 = true;
 });
+
+

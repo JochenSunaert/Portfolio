@@ -115,6 +115,7 @@ nav{
     background-color: #FF4C29;
     padding-top: 10px;
     margin-top: -175px;
+    z-index: 100;
 }
 
 
@@ -148,6 +149,11 @@ main > article:nth-child(3) h1{
 .leftarticle > div{
     display:grid;
   }
+
+.leftarticle > img{
+    align-self: end;
+    width: 110%;
+}
 
 main > article:nth-child(3) p{
     margin-top: 10%;
@@ -747,7 +753,6 @@ form h4{
 
 
  /*----------------------  PORTFOLIO DIV SECTION ----------------------*/
-
 /* General portfolio item styles */
 .portfolio-item {
     position: relative;
@@ -755,18 +760,6 @@ form h4{
     height: 0;
     padding-bottom: 100%; /* Maintain aspect ratio */
     overflow: hidden;
-}
-
-/* Image styling */
-.portfolio-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
 
@@ -778,10 +771,13 @@ form h4{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, opacity 0.3s ease;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    opacity: 1; /* Ensure it's visible initially */
 }
+
+
 
 /* Text styling */
 .portfolio-item .hover-text {
@@ -800,13 +796,9 @@ form h4{
 }
 
 /* Hover effects */
-.portfolio-item:hover img {
-    opacity: 0;
-}
-
 .portfolio-item:hover video {
-    opacity: 1;
-    pointer-events: auto;
+    filter: grayscale(0%);
+    pointer-events: auto; /* Allows play/pause functionality */
 }
 
 .portfolio-item:hover .hover-text {
