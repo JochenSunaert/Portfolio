@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio | Jochen Sunaert</title>
 </head>
 
@@ -23,15 +25,10 @@
         </div>
         <ul>
             <li><a class="link1">Home</a></li>
-            <li><a class="link2">About</a></li>
-            <li><a class="link3">Portfolio</a></li>
-            <li><a class="link4">Cover letter</a></li>
             <li><a class="link5">Skills</a></li>
+            <li><a class="link3">Portfolio</a></li>
             <li><a class="link6">Education</a></li>
-            <li><a class="link7">Facts</a></li>
-            <li><a class="link8">Experience</a></li>
             <li><a class="link9">Contact</a></li>
-            <li><a class="link10" href="#">Blog</a></li>
         </ul>
     </div>
     <aside>
@@ -71,13 +68,13 @@
         <article class="leftarticle">
             <img src="images/Headerimage.jpg">
             <div>
-                <h1>Hello<br> I’m&nbsp;Jochen<br> Sunaert</h1>
-                <p>Een laatstejaarsstudent in Erasmus hogeschool Brussel. Profesioneel webdesigner en webdeveloper met ervaring in: Javascript, Php, Laravel, React, Vue, Jquery, Node, en adobe programma's</p>
+                <h1 data-aos="fade-up">Hello<br> I’m&nbsp;Jochen<br> Sunaert</h1>
+                <p data-aos="fade-right">Een laatstejaarsstudent in Erasmus hogeschool Brussel. Profesioneel webdesigner en webdeveloper met ervaring in: Javascript, Php, Laravel, React, Vue, Jquery, Node, en adobe programma's</p>
                     <img class="zigzag" src="images/zigzag.png">
             </div>
         </article>
         <!--skills-->
-        <section class="skills">
+        <section class="skills" id="skills-section" data-aos="fade-up">
             <div class="skilltext">
                 <div>
                     <h3>Skills</h3>
@@ -85,12 +82,12 @@
             </div>
             <div class="aboutskills">
                 <h4>Mijn skills en ervaringen.</h4>
-                <p>ervaring met adobe programma's / maken en creeëren van websites / video editing / veel meer! </p>
+                <p>ervaring met adobe programma's / maken en creeëren van websites / en veel meer! </p>
                 <div class="percentagegrid">
                     <div class="graph">
                         <div></div>
                         <div class="graph1"></div>
-                        <p>ADOBE XD, PHOTOSHOP, INDESIGN, ILLUSTRATOR</p>
+                        <p>ADOBE XD, INDESIGN, ILLUSTRATOR</p>
                     </div>
                     <p>80%</p>
                 </div>
@@ -137,25 +134,30 @@
             </div>
         </section>
         <!--portfolio-->
-        <article class="portfolio">
+        <article class="portfolio" id="portfolio-section" data-aos="fade-left">
             <div class="portfoliodiv">
                 <div class="portfoliotext">
                     <h3><strong>Web</strong></h3>
 
                 </div>
+                <a href="pages/quizmaster.html">
+                    <div class="portfolio-item">
+                        <video src="images/PortfolioImages/Quizmaster/quizmaster.mp4" muted loop></video>
+                        <span class="hover-text">Web - Quizmaster - Live quiz</span>
+                    </div>
+                </a>
+                <a href="pages/portaal.html">
                 <div class="portfolio-item">
-                    <video src="images/PortfolioImages/Quizmaster/quizmaster.mp4" muted loop></video>
-                    <span class="hover-text">Web - Quizmaster - Live quiz</span>
-                </div>
-                <div class="portfolio-item">
-                    <video src="images/PortfolioImages/Portaal.mp4" muted loop></video>
+                    <video src="images/PortfolioImages/Portaal/Portaal.mp4" muted loop></video>
                     <span class="hover-text">Web - Portaal - Fairy tale portal</span>
                 </div>
-
+                </a>
+                <a href="pages/sprookje.html">
                 <div class="portfolio-item">
-                    <video src="images/PortfolioImages/Sprookje.mp4" muted loop></video>
+                    <video src="images/PortfolioImages/Sprookje/Sprookje.mp4" muted loop></video>
                     <span class="hover-text">Web - Repelsteeltje - Fairy tales</span>
                 </div>
+                </a>
                 <div class="portfolio-item">
                     <video src="images/PortfolioImages/Animaties.mp4" muted loop></video>
                     <span class="hover-text">Web - One Piece - Animations playground</span>
@@ -164,10 +166,12 @@
                     <video src="images/PortfolioImages/Scraper.mp4" muted loop></video>
                     <span class="hover-text">Web - Torfs Scraper - Data Scraper</span>
                 </div>
-                <div class="portfolio-item topitem">
-                    <video src="images/PortfolioImages/Lifters.mp4" muted loop></video>
-                    <span class="hover-text">Web - Lifters - Coding website</span>
-                </div>
+                <a href="pages/lifters.html">
+                    <div class="portfolio-item topitem">
+                        <video src="images/PortfolioImages/Lifters/Lifters.mp4" muted loop></video>
+                        <span class="hover-text">Web - Lifters - Coding website</span>
+                    </div>
+                </a>
                 <div class="portfolio-item topitem">
                     <video src="images/PortfolioImages/Rocketeer.mp4" muted loop></video>
                     <span class="hover-text">Web - Rocketeer - Website manned rockets</span>
@@ -175,15 +179,17 @@
                 <div class="portfoliotext black">
                     
                 </div>
-                <div class="portfolio-item topitem">
-                    <video src="images/PortfolioImages/aquabeats.mp4" muted loop></video>
+                <a href="pages/aquabeats.html">
+                <div class="portfolio-item topitem" data-aos="fade-up">
+                    <video src="images/PortfolioImages/Aquabeats/aquabeats.mp4" muted loop></video>
                     <span class="hover-text">Design - AquaBeats - Festival Design</span>
                 </div>
-                <div class="portfolio-item topitem">
+                </a>
+                <div class="portfolio-item topitem" data-aos="fade-up">
                     <video src="images/PortfolioImages/Trackmania.mp4" muted loop></video>
                     <span class="hover-text">Design - Trackmania - Visual design about game Trackmania</span>
                 </div>
-                <div class="portfoliotext">
+                <div class="portfoliotext" data-aos="fade-up">
                     <h3><strong>Designs</strong></h3>
                 </div>
                 <div class="portfolio-item topitem">
@@ -195,7 +201,7 @@
         </article>
         
         <!--Education section-->
-        <section class="education">
+        <section class="education" id="education-section" data-aos="fade-up">
             <div>
                 <h3>Education</h3>
             </div>
@@ -245,32 +251,25 @@
                 </div>
         </section>
         <!--contact-->
-        <section class="skills2 contact">
+        <section class="skills2 contact" id="contact-section" data-aos="fade-up">
             <div class="aboutskills aboutcontact">
                 <h4>Heb je een vraag? Of wil je wat meer weten? Je kan me altijd contacteren!</h4>
                 <section>
-                    <!-- <div>
-                        <p>Vul de benodigde velden in hieronder en dan krijg je binnenkort een antwoord terug in je email inbox!</p>
-                    </div> -->
                     <div>
                         <p><strong>Telefoonnummer:</strong> +32 47 00 90 825 </p>
                         <p><strong>E-mail:</strong> Jochen.Sunaert@outlook.com </p>
                         <p><strong>Adres:</strong> Leliestraat 16, 1742 Ternat </p>
+                        <br>
+                        <h3><strong>Socials:</strong></h3>
+                        <strong>
+                        <a href="https://www.linkedin.com/in/jochen-sunaert-3a329b26b/" target="_blank">LINKEDIN <i class="fa-solid fa-arrow-right"></i></a><br>
+                        <a href="https://www.instagram.com/jochensunaert/" target="_blank">INSTAGRAM <i class="fa-solid fa-arrow-right"></i></a><br>
+                        <a href="https://www.facebook.com/people/Jochen-Sunaert/pfbid02gSQAHmJ7yAfuFsXngEQrU8Mw8HW6ZTzGaaqa82tJ5dKHxAsw7fyo4xBzM8Q7wFhhl/" target="_blank">FACEBOOK <i class="fa-solid fa-arrow-right"></i></a><br>
+                        </strong>
                     </div>
-                    <!-- <form class="contactform">
-                        <h4>Name</h4>
-                        <input type="text">
-                        <h4>Email</h4>
-                        <input type="email">
-                        <h4>Subject</h4>
-                        <input type="text">
-                        <h4>Message</h4>
-                        <textarea></textarea>
-                        <input type="submit" placeholder="Send Message" value="Send Message" class="submit">
-                    </form> -->
                 </section> 
             </div>
-            <div class="skilltext contacttext">
+            <div class="skilltext contacttext" >
                 <div>
                     <h3>Contact</h3>
                     <img src="images/square.png" class="rotatesquare">
@@ -299,6 +298,9 @@
 });
 
 </script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

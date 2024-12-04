@@ -11,7 +11,9 @@ a, aside p{
     text-decoration: none;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /*-------------------Hamburger----------------------*/
 .hamburger{
@@ -75,8 +77,12 @@ aside h2{
 aside a{
     margin-bottom: 20px;
     margin-right: 150px;
-
+    color: white;
 }
+aside a:hover{
+    color: #FF4C29;
+}
+
 
 main{
     margin-left: 190px;
@@ -153,6 +159,11 @@ main > article:nth-child(3) h1{
 .leftarticle > img{
     align-self: end;
     width: 110%;
+    filter: grayscale(100%);
+}
+
+.leftarticle > img:hover{
+    filter: grayscale(0%);
 }
 
 main > article:nth-child(3) p{
@@ -513,10 +524,6 @@ grid-column: 1/2;
     font-weight: bold;
 }
 
-i{
-    color: #188497;
-    font-size: 4em;
-}
 
 .aboutfacts > section{
     display: grid;
@@ -831,4 +838,220 @@ form h4{
 
 .black{
     background-color: black;
+}
+
+
+.subpages video{
+    margin-top: 3%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.subpages main > article:nth-child(3){
+    grid-template-columns: 1fr;
+}
+
+.subpages main article:nth-child(3) > div{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+}
+
+
+.subpages main article:nth-child(3) > div .zigzag{
+    margin-top: 0;
+    width: 15%;
+    margin-top: -10%;
+    margin-bottom: 0px;
+}
+
+.titleitem h1, .titleitem h3, .titleitem h4{
+    color: white;
+    text-align: center;
+}
+
+.titleitem h1{
+    margin-top: 20%;
+    font-size: 5em;
+}
+
+.titleitem i{
+    color: #FF4C29;
+    font-weight: bold;
+}
+
+.titleitem{
+    margin-bottom: 20%;
+}
+
+.subpages .abouteducation{
+    grid-template-columns: 1fr;
+}
+
+.subpages .skilltext{
+    background-color: white;
+}
+
+.subpages .orangebox{
+    background-color: #FF4C29;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    height: 300px;
+}
+
+.subpages .orangebox h3{
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 3em;
+}
+
+.subpages .orangebox img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.portfoliomedia{
+    grid-row: 1/2;
+}
+
+.subpages .skills2{
+    grid-template-rows: 1fr;
+}
+
+.bottomtitle p{
+    color: white;
+    width: 80%;
+    align-self: center;
+
+}
+
+.bottomtitle h4{
+    font-size: 3em;
+    justify-self: start;
+    color: #FF4C29;
+}
+
+.bottomtitle strong{
+    color: white;
+}
+
+.bottomtitle {
+    margin-top: 2%;
+    display: grid;
+    color: white;
+    margin-bottom: 10%;
+}
+
+
+.moreprojects{
+    color: white;
+}
+
+
+.subpages .education {
+    margin-bottom: 5px;
+}
+
+.bottomtitle h1{
+    margin-top: 5%;
+}
+
+.bottomtitle a{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 5%;
+
+}
+
+.bottomtitle a:hover{
+color: #FF4C29;
+}
+
+.bottomtitle a:hover i{
+    margin-left: 5%;
+}
+
+#portfolio-section, #skills-section, #education-section, #contact-section {
+    scroll-margin-top: 50vh;
+}
+
+.portfoliomedia{
+    display: grid;
+}
+
+.media-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.media-item .hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.media-item:hover .hover-text {
+    opacity: 1;
+    transform: translate(-50%, 0); 
+}
+
+.aboutcontact a{
+    color: black;
+}
+
+.aboutcontact a i{
+    color: #FF4C29;
+}
+
+.aboutcontact a:hover i{
+    margin-left: 10%;
+}
+
+.mobilebeats video{
+    width: 25%;
+    align-self: center;
+    justify-self: center;
+}
+.mobilebeats main article:nth-child(3) > div .zigzag{
+    margin-right: 300px;
+}
+
+.mobilebeats .media-item{
+    display: grid;
+}
+.mobilebeats .portfoliomedia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.mobilebeats .media-item img{
+    width: 100%;
+    justify-self: end;
+
+    
 }
