@@ -87,6 +87,7 @@ aside a:hover{
 main{
     margin-left: 190px;
     width: 75%
+    max-width: 1500px;
 }
 
 body{
