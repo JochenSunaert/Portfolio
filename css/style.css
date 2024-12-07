@@ -86,7 +86,7 @@ aside a:hover{
 
 main{
     margin-left: 190px;
-    width: 75%
+    width: 75%;
     max-width: 1500px;
 }
 
@@ -785,6 +785,10 @@ form h4{
     opacity: 1; /* Ensure it's visible initially */
 }
 
+.django{
+    object-position: top left;
+    object-fit: cover;
+}
 
 
 /* Text styling */
@@ -829,6 +833,7 @@ form h4{
     align-items: center;
     justify-items: center;
     background-color: #FF4C29;
+    text-align: center;
 }
 
 .portfoliotext h3{
