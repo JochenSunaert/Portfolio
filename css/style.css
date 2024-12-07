@@ -735,13 +735,14 @@ form h4{
     grid-template-rows: 0.15fr 1fr;
     height: 100%;
     width: 100%;
-    background-color: #FAEDDF;
-    color: #7A5932;
+    background-color: #FF4C29;
+    color: white;
     font-weight: 500;
     letter-spacing: 1px;
     text-align: center;
     margin-left: 1000px;
     display:none;
+    z-index: 100;
  }
 
  .mobilefixed > div{

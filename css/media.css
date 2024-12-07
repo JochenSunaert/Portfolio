@@ -22,7 +22,6 @@
         font-weight: 200;
         font-size: 3em;
         line-height: 60px;
-        color: #7a5932;
     }
 
     main > article:nth-child(3) p{
@@ -97,6 +96,10 @@
         margin-right: 0px;
         width: 20%;
     }
+    .subpages .zigzag{
+        margin-right: 50px;
+        width: 30% !important;
+    }
     .rotatesquare{
         margin-right: 0px;
     }
@@ -162,7 +165,7 @@
         width: 30px;
         height: 3px;
         margin-bottom: 5px;
-        background-color: #7a5932;
+        background-color: white;
         justify-self: center;
         align-self: center;
     }
@@ -170,7 +173,7 @@
         width: 25px;
         height: 3px;
         margin-bottom: 5px;
-        background-color: #7a5932;
+        background-color: white;
         justify-self: center;
         align-self: center;
     }
@@ -179,7 +182,7 @@
         width: 15px;
         height: 3px;
         margin-bottom: 5px;
-        background-color: #7a5932;
+        background-color: #FF4C29;
         justify-self: center;
         align-self: center;
     }
@@ -191,7 +194,70 @@
     .mobilefixed{
         display:grid;
     }
+
+    .skills2{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{grid-template-rows: none;}
     
+    .leftarticle > img{
+        width: 100%;
+    }
+
+    .portfoliotext{
+        padding: 5% 0%;
+    }
+
+    .portfoliorow{
+        grid-row-start: 10;
+    }
+
+    .abouteducation div:nth-child(2) article{
+
+        margin-bottom: 20%;
+    }
+    
+    .subpages video{
+        margin:5%;
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    .titleitem h1{
+        font-size: 2.5em;
+    }
+
+    .titleitem h4{
+        font-size: 1em;
+    }
+    .titleitem h3{
+        font-size: 1em;
+    }
+
+    .subpages .orangebox{
+        grid-row: 1;
+        height: 100%;
+        padding: 5%;
+    }
+    .portfoliomedia{
+        grid-row: none;
+    }
+
+    .bottomtitle h1{
+        font-size: 2em;
+    }
+    .bottomtitle a{
+        font-size: 1.2em;
+        margin-bottom: 20%;
+    }
+
+    .portfolio-item{
+        margin-bottom: 2%;
+    }
+    .portfolio-item video{
+        filter: grayscale(0%);
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -200,6 +266,7 @@
         height: 400px;
         padding: 7%;
         padding-bottom: 0%;
+        margin-top: 10%;
     }
     
 }
