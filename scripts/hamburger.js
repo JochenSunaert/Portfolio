@@ -50,7 +50,7 @@ $('.hamburger').click(
           } else{
             $("body").css('overflow', 'scroll');
             $(".mobilefixed").css('margin-left', '1000px');
-            $(".hamburger2").css('z-index', '0');
+            $(".hamburger2").css('z-index', '10000');
             
             $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
             $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -72,7 +72,7 @@ $(".link1").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -87,7 +87,7 @@ $(".link2").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -102,7 +102,7 @@ $(".link3").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -117,7 +117,7 @@ $(".link4").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -132,7 +132,7 @@ $(".link5").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -147,7 +147,7 @@ $(".link6").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -162,7 +162,7 @@ $(".link7").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -177,7 +177,7 @@ $(".link8").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '10000');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');
@@ -194,7 +194,7 @@ $(".link9").click(function() {
     }, 1000);
     $("body").css('overflow', 'scroll');
     $(".mobilefixed").css('margin-left', '1000px');
-    $(".hamburger2").css('z-index', '0');
+    $(".hamburger2").css('z-index', '100');
     
     $(" .hamburger2 > div> div:nth-child(1)").css('transform', 'rotate(0deg)');
     $(" .hamburger2 > div> div:nth-child(1)").css('margin-bottom', '5px');

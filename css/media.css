@@ -174,8 +174,8 @@
         height: 3px;
         margin-bottom: 5px;
         background-color: white;
-        justify-self: center;
-        align-self: center;
+        justify-self: end;
+        align-self: end;
     }
 
     .hamburger2 > div> div:nth-child(2){
@@ -183,8 +183,8 @@
         height: 3px;
         margin-bottom: 5px;
         background-color: #FF4C29;
-        justify-self: center;
-        align-self: center;
+        justify-self: end;
+        align-self: end;
     }
 
     .hamburger2:hover > div> div{
@@ -266,7 +266,7 @@
         height: 400px;
         padding: 7%;
         padding-bottom: 0%;
-        margin-top: 10%;
+        margin-top: 20%;
     }
     
 }
